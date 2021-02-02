@@ -14,7 +14,8 @@ The objective of the borderline personality disorder (BoPD) Automatic Screening 
 In the pilot phase, the algorithm has been incorporated into a portable screening tool based on WinPython, a portable distribution of Python programming language for Windows.
 
 > **How much details should we talk about our two stage model? or just a high level overview?**
->
+
+1. We proposed a knowledge-enriched semi-supervised learning framework to learn a classification model
 
 
 ## Develop environment
