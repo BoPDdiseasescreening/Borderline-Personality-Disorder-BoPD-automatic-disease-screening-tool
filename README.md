@@ -32,7 +32,7 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 
 ## License (Ziwei)
 
-## Reference
+## References
 
 American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition. Arlington VA: American Psychiatric Association.
 
