@@ -35,7 +35,9 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 ## Reference
 
 American Psychiatric Association. (2013). Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition. Arlington VA: American Psychiatric Association.
+
 Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Levin, A., & Reynolds, V. (1998a). Axis I comorbidity of borderline personality disorder. Am J Psychiatry, 155(12), 1733-1739. doi:10.1176/ajp.155.12.1733
+
 Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Levin, A., & Reynolds, V. (1998b). Axis II comorbidity of borderline personality disorder. Compr Psychiatry, 39(5), 296-302. doi:10.1016/s0010-440x(98)90038-4
 
 ## Publication
