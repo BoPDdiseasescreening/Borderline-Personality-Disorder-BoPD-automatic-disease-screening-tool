@@ -22,7 +22,7 @@ In the pilot phase, the algorithm has been incorporated into a portable screenin
 The portable WinPython can be implemented under windows operation system.
 
 ## Data used to develop the algorithm
-We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data. Data in Health Facts is directly extracted from Electronic Medical Records (EMR) from hospitals who has data use agreement with Cerner. Encounters may include pharmacy, clinical and microbiology laboratory, admission, and billing information from affiliated patient care locations.
+We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data. Data in Health Facts is directly extracted from Electronic Medical Records (EMR) from hospitals who has data use agreement with Cerner. Encounters may include pharmacy, clinical and microbiology laboratory, admission, and billing information from affiliated patient care locations.  Date and time stamps are included for all admissions, medication orders and dispensing, laboratory orders and specimens, providing a temporal relationship between treatment patterns and clinical information. Cerner Corporation has established operating policies ensure that all data in the Health Facts database are fully de-identified in compliance with the Health Insurance Portability and Accountability Act. Currently Health Facts database contains information from approximately 69 million US patients, with data collected from 2000 to 2018 (most between 2009 and 2018).
 
 ## Input data format (Lulu)
 
