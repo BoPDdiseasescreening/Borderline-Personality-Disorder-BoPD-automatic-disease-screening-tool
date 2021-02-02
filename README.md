@@ -42,6 +42,12 @@ Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Lev
 
 ## Publication
 
+Characterization of borderline personality disorder using a large electronic health record database: potential for the development of a disease screening algorithm. (In preparation)
+
+Identifying potentially undiagnosed borderline personality disorder from a large electronic health record database to aid the development of an automatic screening initiative. (In preparation)
+
+Screening Borderline Personality Disorder Patients from Real-World Data under Limited Supervision. (In preparation)
+
 
 
 
