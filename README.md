@@ -29,6 +29,8 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 ## Input data format (Lulu)
 
 ## Execution of BoPDscreen (Ziwei)
+1. Portable version
+2. Headless version
 
 ## License (Ziwei)
 
