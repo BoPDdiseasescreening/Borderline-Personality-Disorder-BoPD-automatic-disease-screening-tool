@@ -5,7 +5,7 @@ Borderline personality disorder (BoPD) is a psychological disorder that begins i
 
 BoPD is a complex disorder which has been associated with many comorbidities such as depression, bipolar disorder and anxiety disorders (American Psychiatric Association, 2013; Zanarini et al., 1998a, 1998b). Due to this, patients with BoPD are often misdiagnosed and there is evidence that approximately 40% of patients have received a previous misdiagnosis of bipolar disorder compared with only 10% of patients without BoPD (Ruggero, Zimmerman, Chelminski, & Young, 2010). This highlights an unmet need for effective BoPD screening methods that enable an accurate and timely diagnosis.
 
-## Screening tool development
+## BoPD Automatic Screening Initiative
 
 To address the unmet need for effective BoPD screening methods, an initiative has been formed to develop a machine learning algorithm that utilizes electronic health record (EHR) databases to automatically identify patients likely to have BoPD, but without formal diagnosis. Such an algorithm will facilitate efficient real-world clinical decision making for patients with BoPD.
 
