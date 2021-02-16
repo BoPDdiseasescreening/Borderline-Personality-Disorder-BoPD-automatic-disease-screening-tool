@@ -29,12 +29,12 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 ## Input data format (Lulu)
 
 ## Execution of BoPDscreen (Ziwei)
-# 1. Portable version
+### 1. Portable version
 
-The portable screening tool is based on WinPython, a portable distribution of Python programming language for Windows. The zip file attached contains full WinPython application and all document needed. Please see the tool maunal [toolinstruction.md](https://github.com/elyiorgos/sleeppy/blob/master/toolinstruction.md) for detailed execution instructions
+The portable screening tool is based on WinPython, a portable distribution of Python programming language for Windows. The zip file attached contains full WinPython application and all document needed. Please see the tool maunal [tool_instruction.md](https://github.com/elyiorgos/sleeppy/blob/master/toolinstruction.md) for detailed execution instructions
 $ Note: The downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended. $ 
 
-# 2. Headless version
+### 2. Headless version
 
 After preparing the input dataset as instructed, set the location of input dataset as default directory path, download attached CCSR coding document (v2020-2) to the same location and run the code file for screening result. Here is a built-in check for input data standards. If data quality check does not pass, here will be a warning message indicating the questionable part and the program will be terminated. Please revisit, fix it and rerun. 
 
@@ -54,6 +54,8 @@ VI.	Screening Model Implementation
 
 
 ## License (Ziwei)
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/elyiorgos/sleeppy/blob/master/LICENSE.md) file for details.
 
 ## References
 
