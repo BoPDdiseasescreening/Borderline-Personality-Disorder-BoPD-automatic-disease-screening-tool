@@ -31,8 +31,11 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 ## Execution of BoPDscreen (Ziwei)
 ### 1. Portable version
 
-The portable screening tool is based on WinPython, a portable distribution of Python programming language for Windows. The zip file attached contains full WinPython application and all document needed. Please see the tool maunal [tool_instruction.md](https://github.com/elyiorgos/sleeppy/blob/master/toolinstruction.md) for detailed execution instructions
-$ Note: The downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended. $ 
+The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section.
+
+The zip file attached contains full WinPython application and supporting document needed for execution. Please see the tool maunal [tool_instruction.md](https://github.com/elyiorgos/sleeppy/blob/master/toolinstruction.md) for detailed execution instructions.
+
+ ***Note**: The downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended.* 
 
 ### 2. Headless version
 
