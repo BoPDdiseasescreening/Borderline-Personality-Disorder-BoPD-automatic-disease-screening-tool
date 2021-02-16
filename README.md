@@ -55,7 +55,7 @@ VI.	Screening Model Implementation
 
 ## License (Ziwei)
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/elyiorgos/sleeppy/blob/master/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/LICENSE.md) file for details.
 
 ## References
 
