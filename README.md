@@ -27,13 +27,15 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 > 1. should we talk about 456 golden data, then silver label data, then model generation?
 
 ## Preparing input dataset for the screening tool
+The key steps are demonstrated in the flowchart below.![Flow chart ](/images/flowchart.png)
+In next section, more details are provided with sample SQL codes. The SQL codes are for demonstration purpose and please adjust them based on your database.
 > INITIAL INPUT: datasets from EHR database
 Necessary fields to include: Unique subject identifier, diagnosis codes, visit dates, visit type, demographic information
 This process starts with integrating multiple datasets in EHR database. Usually, EHR data is stored as a relational database. Different information are stored in different datasets. For example, demographic information in one dataset, diagnosis information in another dataset, etc. Hence, those pieces of useful information need to be pulled from different tables.
-![flowchart]()
+
 For this screening tool, the essential information includes demographic (age, gender), visit/encounter date (start date and end date), diagnosis codes in each encounter/visit and encounter type. Therefore, the initial step is to locate the necessary information for later use.
 > Step 1: Initial inclusion and exclusion
->> Step 1.1: Get the patient list 
+*Step 1.1: Get the patient list 
 Once datasets with all needed information are identified, these fields can be pulled together and the initial inclusion and exclusion criteria can be applied.
 Since EHR database has a large population, the first filter of inclusion needs to be applied to select the subjects who ever had the diagnosis codes related to the study since 2017-01-01. The inclusion list is provided in appendix 1. Based on our experience, approximately 10% to 15% of the total population may be retained from this step. However, this percentage might differ in different EHR databases. 
 In addition, all encounters between age 18 to 65 are included in the dataset.
@@ -84,10 +86,10 @@ create table patient_list_of_step1 as
 	 on a.patient_sk=b.patient_sk
 	 where b.patient_sk is null
 ```
->>Step 1.2 Gather all needed information
+*Step 1.2 Gather all needed information
 Once the patient list is obtained from the step 1.1, the next step is to gather all diagnosis codes since 2017-01-01. You can use similar SQL to select all visits/encounters and their non-missing diagnosis codes by using the patient_sk (unique patient identifier) you get from step 1.1. 
 After step 1.2, the output dataset should look exactly like the sample data in Appendix_2.
->>>Sample code
+>Sample code
 ```mySQL
 /* Gather all diagnosis information */
 create table your_dataset_of_step_1 as
@@ -121,12 +123,12 @@ D.	Records with missing values in any columns should be removed except for “pa
 > Step 3: Filter subjects with sufficient history
 In this step, subjects with sufficient clinical history are retained for the screening tool. These subjects need to have at least five encounters on different discharge dates or at least two emergency visits on different discharge dates. 
 
->>Programming Note
+>Programming Note
 1.	For condition of “at least five encounters on different dates”, select the patients from previous steps and use the condition” having count(distinct(discharged_date))>=5”, create patient-list 1
 2.	For condition of “at least two emergency visits”, first identify the visits which are emergency, put them into “emergency group” or set a flag to it. Then select the patients having count(distinct(discharged_date))>=2 when the visit type is emergency, create patient list 2
 3.	There might be some overlap in patient-list 1 and 2. Then get a UNION list of these two.
 
->>>Sample code
+>Sample code
 ```mySQL
 /* create a list of 5+ encounters */
 /* patient_sk is the unique patient identifier */
