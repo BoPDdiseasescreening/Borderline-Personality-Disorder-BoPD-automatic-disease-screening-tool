@@ -35,12 +35,12 @@ This process starts with integrating multiple datasets in EHR database. Usually,
 
 For this screening tool, the essential information includes demographic (age, gender), visit/encounter date (start date and end date), diagnosis codes in each encounter/visit and encounter type. Therefore, the initial step is to locate the necessary information for later use.
 > Step 1: Initial inclusion and exclusion
-*Step 1.1: Get the patient list 
+* Step 1.1: Get the patient list 
 Once datasets with all needed information are identified, these fields can be pulled together and the initial inclusion and exclusion criteria can be applied.
 Since EHR database has a large population, the first filter of inclusion needs to be applied to select the subjects who ever had the diagnosis codes related to the study since 2017-01-01. The inclusion list is provided in appendix 1. Based on our experience, approximately 10% to 15% of the total population may be retained from this step. However, this percentage might differ in different EHR databases. 
 In addition, all encounters between age 18 to 65 are included in the dataset.
 From the subjects who met the inclusion rule, those who ever had an ICD-10-CM diagnosis code of F60.3, F00-F09, F70-F79 need to be excluded. (F60.3: Borderline personality disorder; F00-F09: Mental disorder due to known physiological condition; F70-F79: Intellectual disabilities)
->>>Programming Note
+> Programming Note
 1.	In appendix_1, the ICD-10 codes are in a format of combination of letters and numbers without any symbols, i.e. F603, however, in EHR systems, ICD-10 codes usually have ‘.’ between numbers, e.g. ‘F60.3’. So, when using Appendix_1, please remove any ‘.’ in your dataset to match the diagnosis code in Appendix_1.
 2.	Appendix_1 shall be imported into your database for further data integration and selection. The first column contains all the ICD_10 codes in the inclusion list. The second column is diagnosis_description which won’t be used. It is included here for better understanding the meaning of codes.
 3.	Use SQL queries to merge different tables by INNER JOIN on unique keys to create the tables.
@@ -86,10 +86,10 @@ create table patient_list_of_step1 as
 	 on a.patient_sk=b.patient_sk
 	 where b.patient_sk is null
 ```
-*Step 1.2 Gather all needed information
+* Step 1.2 Gather all needed information
 Once the patient list is obtained from the step 1.1, the next step is to gather all diagnosis codes since 2017-01-01. You can use similar SQL to select all visits/encounters and their non-missing diagnosis codes by using the patient_sk (unique patient identifier) you get from step 1.1. 
 After step 1.2, the output dataset should look exactly like the sample data in Appendix_2.
->Sample code
+> Sample code
 ```mySQL
 /* Gather all diagnosis information */
 create table your_dataset_of_step_1 as
