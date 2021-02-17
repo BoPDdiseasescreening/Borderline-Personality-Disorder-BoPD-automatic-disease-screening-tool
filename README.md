@@ -157,7 +157,7 @@ create table your_dataset_of_step3 as
 
 >	OUTPUT: input dataset for the screening tool
 Once all the previous steps are completed, you would already have a patient list who meets all those filtering requirements. Please then merge all the required information of these patients into one single dataset and clean up all the abnormities as specified in the previous section. 
-The data specification and a sample dataset can be found in Appendix_2. 
+The data specification and a sample dataset can be found in [Appendix_2](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Appendix_2.xlsx). 
 This dataset will be used as the input dataset for the screening tool. Please save it as “.csv” file and place it in the local environment under screening tool folder “BoPDScreeningTool/Application Demo” (refer to step 6 in section 3.2 below). 
 
 
