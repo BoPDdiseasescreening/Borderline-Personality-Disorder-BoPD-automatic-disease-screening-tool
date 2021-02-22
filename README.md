@@ -4,7 +4,7 @@
 1. [BoPD overview](##bopd-overview)
 2. [BoPD Automatic Screening Initiative](#BoPD-Automatic-Screening-Initiative)
 3. [Develop environment](#Develop-environment)
-4. [Data used to develop the algorithm (Nan)](#Data-used-to-develop-the-algorithm-(Nan))
+4. [Data used to develop the algorithm (Nan)](#Data-used-to-develop-the-algorithm-Nan)
 
 
 
