@@ -1,10 +1,11 @@
 # Borderline Personality Disorder (BoPD) automatic disease screening tool
 
 # Table of Contents
-1. [BoPD overview](##bopd-overview)
-2. [BoPD Automatic Screening Initiative](#BoPD-Automatic-Screening-Initiative)
-3. [Develop environment](#Develop-environment)
-4. [Data used to develop the algorithm (Nan)](#Data-used-to-develop-the-algorithm-Nan)
+1. [Introduction]
+	1. [BoPD overview](##bopd-overview)
+	2. [BoPD Automatic Screening Initiative](#BoPD-Automatic-Screening-Initiative)
+	3. [Develop environment](#Develop-environment)
+	4. [Data used to develop the algorithm (Nan)](#Data-used-to-develop-the-algorithm-Nan)
 
 
 
