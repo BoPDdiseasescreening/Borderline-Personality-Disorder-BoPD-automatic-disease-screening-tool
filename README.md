@@ -2,15 +2,12 @@
 
 # Table of Contents
 1. [Introduction]
-	2. [BoPD overview](##bopd-overview)
-	    1.[aaa]
-	    2.[bbb]
-	        1.[ccc]
-	4. [BoPD Automatic Screening Initiative](#BoPD-Automatic-Screening-Initiative)
-	5. [Develop environment](#Develop-environment)
-	6. [Data used to develop the algorithm (Nan)](#Data-used-to-develop-the-algorithm-Nan)
+	1. [BoPD overview](##bopd-overview)
+	2. [BoPD Automatic Screening Initiative](#BoPD-Automatic-Screening-Initiative)
+	3. [Develop environment](#Develop-environment)
+	4. [Data used to develop the algorithm (Nan)](#Data-used-to-develop-the-algorithm-Nan)
 
-2. [second]
+
 
 
 
