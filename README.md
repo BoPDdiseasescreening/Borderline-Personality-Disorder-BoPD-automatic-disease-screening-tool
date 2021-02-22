@@ -27,10 +27,10 @@ The objective of the borderline personality disorder (BoPD) Automatic Screening 
 In the pilot phase, the algorithm has been developed with two methods of implementation.  The first one is implementation through executable python source code.  The second one is implementation through WinPython, a portable distribution of Python programming language for Windows.
 
 
-## Develop environment
+### 1.3 Develop environment
 The portable WinPython can be implemented under windows operation system (Microsoft Windows 10 Enterprise).
 
-## Data used to develop the algorithm (Nan)
+### 1.4 Data used to develop the algorithm (Nan)
 We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data. Data in Health Facts is directly extracted from Electronic Medical Records (EMR) from hospitals who has data use agreement with Cerner. Encounters may include pharmacy, clinical and microbiology laboratory, admission, and billing information from affiliated patient care locations.  Date and time stamps are included for all admissions, medication orders and dispensing, laboratory orders and specimens, providing a temporal relationship between treatment patterns and clinical information. Cerner Corporation has established operating policies ensure that all data in the Health Facts database are fully de-identified in compliance with the Health Insurance Portability and Accountability Act. Currently Health Facts database contains information from approximately 69 million US patients, with data collected from 2000 to 2018 (most between 2009 and 2018).
 
 ## Preparing input dataset for the screening tool
