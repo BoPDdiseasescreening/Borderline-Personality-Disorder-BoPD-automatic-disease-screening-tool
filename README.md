@@ -8,6 +8,9 @@
 	- [1.4 Data used to develop the algorithm (Nan)](#14-Data-used-to-develop-the-algorithm-Nan)
 - [2. Preparing input dataset for the screening tool](#2-Preparing-input-dataset-for-the-screening-tool)
 - [3. Execution of BoPDscreen](#3-Execution-of-BoPDscreen)
+- [4. Reference](#4-Reference)
+- [5. License](#5-License)
+- [6. Publication](#6-Publication)
 
 
 
@@ -175,7 +178,7 @@ The data specification and a sample dataset can be found in [Appendix_2](https:/
 This dataset will be used as the input dataset for the screening tool. Please save it as “.csv” file and place it in the local environment under screening tool folder “BoPDScreeningTool/Application Demo” (refer to step 6 in section 3.2 below). 
 
 
-## Execution of BoPDscreen 
+# 3. Execution of BoPDscreen 
 ### 1. Portable version
 
 The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section.
@@ -203,11 +206,11 @@ V.	Feature Engineering
 VI.	Screening Model Implementation
 
 
-## License 
+# 4. License 
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/LICENSE.md) file for details.
 
-## References
+# 5. References
 
 American Psychiatric Association. (2013). *Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition*. Arlington VA: American Psychiatric Association.
 
@@ -223,7 +226,7 @@ Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Lev
 
 Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Levin, A., & Reynolds, V. (1998b). Axis II comorbidity of borderline personality disorder. *Compr Psychiatry, 39*(5), 296-302. doi:10.1016/s0010-440x(98)90038-4
 
-## Publication
+# 6. Publication
 
 Characterization of borderline personality disorder using a large electronic health record database: potential for the development of a disease screening algorithm. (In preparation)
 
