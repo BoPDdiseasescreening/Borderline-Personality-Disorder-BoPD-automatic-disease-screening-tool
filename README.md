@@ -1,24 +1,24 @@
 # Borderline Personality Disorder (BoPD) automatic disease screening tool
 
 # Table of Contents
-1. [Introduction]
-	1. [BoPD overview](##bopd-overview)
-	2. [BoPD Automatic Screening Initiative](#BoPD-Automatic-Screening-Initiative)
-	3. [Develop environment](#Develop-environment)
-	4. [Data used to develop the algorithm (Nan)](#Data-used-to-develop-the-algorithm-Nan)
+- [1. Introduction](#1-introduction)
+	- [1.1 BoPD overview](###11bopd-overview)
+	- [1.2 BoPD Automatic Screening Initiative](###12BoPD-Automatic-Screening-Initiative)
+	- [1.3 Develop environment](###13Develop-environment)
+	- [1.4 Data used to develop the algorithm (Nan)](###14Data-used-to-develop-the-algorithm-Nan)
 
 
 
 
 
+## 1. Introduction
 
-
-## BoPD overview
+### 1.1 BoPD overview
 Borderline personality disorder (BoPD) is a psychological disorder that begins in early adulthood and is characterized by ≥5 of the following symptoms: frantic efforts to avoid real/imagined abandonment, a pattern of unstable/intense personal relationships, identity disturbance, impulsivity that is potentially self-damaging, unstable mood, chronic feelings of emptiness, inappropriate/intense anger, paranoid ideation/severe dissociation and recurrent suicidal or self-harming tendencies(American Psychiatric Association, 2013; Limandri, 2018). BoPD affects approximately 1–2% of the general population, and it is estimated that approximately 10% of psychiatric outpatients and 20% of psychiatric inpatients are affected by the disorder (Ellison, Rosenstein, Morgan, & Zimmerman, 2018; Lieb, Zanarini, Schmahl, Linehan, & Bohus, 2004).
 
 BoPD is a complex disorder which has been associated with many comorbidities such as depression, bipolar disorder and anxiety disorders (American Psychiatric Association, 2013; Zanarini et al., 1998a, 1998b). Due to this, patients with BoPD are often misdiagnosed and there is evidence that approximately 40% of patients have received a previous misdiagnosis of bipolar disorder compared with only 10% of patients without BoPD (Ruggero, Zimmerman, Chelminski, & Young, 2010). This highlights an unmet need for effective BoPD screening methods that enable an accurate and timely diagnosis.
 
-## BoPD Automatic Screening Initiative
+### 1.2 BoPD Automatic Screening Initiative
 
 To address the unmet need for effective BoPD screening methods, an initiative has been formed to develop a machine learning algorithm that utilizes electronic health record (EHR) databases to automatically identify patients likely to have BoPD, but without formal diagnosis. Such an algorithm will facilitate efficient real-world clinical decision making for patients with BoPD.
 
