@@ -40,6 +40,7 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 ## 2. Preparing input dataset for the screening tool
 The key steps are demonstrated in the flowchart below.![Flow chart ](/images/flowchart.png)
 In next section, more details are provided with sample SQL codes. The SQL codes are for demonstration purpose and please adjust them based on your database.
+
 ### INITIAL INPUT: datasets from EHR database
 Necessary fields to include: Unique subject identifier, diagnosis codes, visit dates, visit type, demographic information
 This process starts with integrating multiple datasets in EHR database. Usually, EHR data is stored as a relational database. Different information are stored in different datasets. For example, demographic information in one dataset, diagnosis information in another dataset, etc. Hence, those pieces of useful information need to be pulled from different tables.
