@@ -40,25 +40,25 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 ## 2. Preparing input dataset for the screening tool
 The key steps are demonstrated in the flowchart below.![Flow chart ](/images/flowchart.png)
 In next section, more details are provided with sample SQL codes. The SQL codes are for demonstration purpose and please adjust them based on your database.
-> INITIAL INPUT: datasets from EHR database
+### INITIAL INPUT: datasets from EHR database
 Necessary fields to include: Unique subject identifier, diagnosis codes, visit dates, visit type, demographic information
 This process starts with integrating multiple datasets in EHR database. Usually, EHR data is stored as a relational database. Different information are stored in different datasets. For example, demographic information in one dataset, diagnosis information in another dataset, etc. Hence, those pieces of useful information need to be pulled from different tables.
 
 For this screening tool, the essential information includes demographic (age, gender), visit/encounter date (start date and end date), diagnosis codes in each encounter/visit and encounter type. Therefore, the initial step is to locate the necessary information for later use.
-> Step 1: Initial inclusion and exclusion
+#### Step 1: Initial inclusion and exclusion
 * Step 1.1: Get the patient list 
 Once datasets with all needed information are identified, these fields can be pulled together and the initial inclusion and exclusion criteria can be applied.
 Since EHR database has a large population, the first filter of inclusion needs to be applied to select the subjects who ever had the diagnosis codes related to the study since 2017-01-01. The inclusion list is provided in [Appendix_1](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Appendix_1.xlsx). Based on our experience, approximately 10% to 15% of the total population may be retained from this step. However, this percentage might differ in different EHR databases. 
 In addition, all encounters between age 18 to 65 are included in the dataset.
 From the subjects who met the inclusion rule, those who ever had an ICD-10-CM diagnosis code of F60.3, F00-F09, F70-F79 need to be excluded. (F60.3: Borderline personality disorder; F00-F09: Mental disorder due to known physiological condition; F70-F79: Intellectual disabilities)
-> Programming Note
+#### Programming Note
 1.	In Appendix_1, the ICD-10 codes are in a format of combination of letters and numbers without any symbols, i.e. F603, however, in EHR systems, ICD-10 codes usually have ‘.’ between numbers, e.g. ‘F60.3’. So, when using Appendix_1, please remove any ‘.’ in your dataset to match the diagnosis code in Appendix_1.
 2.	Appendix_1 shall be imported into your database for further data integration and selection. The first column contains all the ICD_10 codes in the inclusion list. The second column is diagnosis_description which won’t be used. It is included here for better understanding the meaning of codes.
 3.	Use SQL queries to merge different tables by INNER JOIN on unique keys to create the tables.
 4.	Add inclusion conditions in “WHERE” statement of the query. It should contain 18<=age<= 65 and discharged date >= 2017-01-01
 5.	Please make sure the discharged_date is in a date format 
 
->Sample code
+#### Sample code
 ```mySQL
 /* inclusion step */
 create table inclusion_patient_list as
@@ -97,7 +97,7 @@ create table patient_list_of_step1 as
 	 on a.patient_sk=b.patient_sk
 	 where b.patient_sk is null
 ```
-* Step 1.2 Gather all needed information
+#### Step 1.2 Gather all needed information
 Once the patient list is obtained from the step 1.1, the next step is to gather all diagnosis codes since 2017-01-01. You can use similar SQL to select all visits/encounters and their non-missing diagnosis codes by using the patient_sk (unique patient identifier) you get from step 1.1. 
 After step 1.2, the output dataset should look exactly like the sample data in [Appendix_2](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Appendix_2.xlsx).
 > Sample code
@@ -115,7 +115,7 @@ select distinct pl.patient_sk, a.column1, b.column2
 	     and   18<= b.age_in_years <=65 
        and   discharged_date >=2017-01-01
 ```
-> Step 2: Data cleaning
+#### Step 2: Data cleaning
 Once all diagnosis codes, visit dates, and demographic information are gathered in one dataset, you can start investigating potential abnormalities. Usually, in the EHR system, the demographic information was entered or updated at each visit. Therefore, inconsistency may exist in gender and  year of birth. Another abnormality can happen to the admitted date and discharged date of each visit if wrong dates was entered. And appropriate data cleaning is needed.
 Below are possible abnormities to check:
 -	Issue 1: Admitted date>discharged date
@@ -131,15 +131,15 @@ C.	If there is more than one gender, then use "majority vote" (Normally the gend
 D.	Records with missing values in any columns should be removed except for “patient_type_desc” where the Null/missing is allowed. 
 
 
-> Step 3: Filter subjects with sufficient history
+#### Step 3: Filter subjects with sufficient history
 In this step, subjects with sufficient clinical history are retained for the screening tool. These subjects need to have at least five encounters on different discharge dates or at least two emergency visits on different discharge dates. 
 
->Programming Note
+#### Programming Note
 1.	For condition of “at least five encounters on different dates”, select the patients from previous steps and use the condition” having count(distinct(discharged_date))>=5”, create patient-list 1
 2.	For condition of “at least two emergency visits”, first identify the visits which are emergency, put them into “emergency group” or set a flag to it. Then select the patients having count(distinct(discharged_date))>=2 when the visit type is emergency, create patient list 2
 3.	There might be some overlap in patient-list 1 and 2. Then get a UNION list of these two.
 
->Sample code
+#### Sample code
 ```mySQL
 /* create a list of 5+ encounters */
 /* patient_sk is the unique patient identifier */
@@ -172,7 +172,7 @@ create table your_dataset_of_step3 as
                   on a.patient_sk=b.patient_sk ;
 ```
 
->	OUTPUT: input dataset for the screening tool
+### OUTPUT: input dataset for the screening tool
 Once all the previous steps are completed, you would already have a patient list who meets all those filtering requirements. Please then merge all the required information of these patients into one single dataset and clean up all the abnormities as specified in the previous section. 
 The data specification and a sample dataset can be found in [Appendix_2](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Appendix_2.xlsx). 
 This dataset will be used as the input dataset for the screening tool. Please save it as “.csv” file and place it in the local environment under screening tool folder “BoPDScreeningTool/Application Demo” (refer to step 6 in section 3.2 below). 
