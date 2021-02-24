@@ -1,3 +1,10 @@
+
+### INITIAL INPUT: datasets from EHR database
+Necessary fields to include: Unique subject identifier, diagnosis codes, visit dates, visit type, demographic information
+This process starts with integrating multiple datasets in EHR database. Usually, EHR data is stored as a relational database. Different information are stored in different datasets. For example, demographic information in one dataset, diagnosis information in another dataset, etc. Hence, those pieces of useful information need to be pulled from different tables.
+
+For this screening tool, the essential information includes demographic (age, gender), visit/encounter date (start date and end date), diagnosis codes in each encounter/visit and encounter type. Therefore, the initial step is to locate the necessary information for later use.
+
 #### Step 1: Initial inclusion and exclusion
 * Step 1.1: Get the patient list 
 Once datasets with all needed information are identified, these fields can be pulled together and the initial inclusion and exclusion criteria can be applied.
@@ -124,3 +131,8 @@ create table your_dataset_of_step3 as
                   inner join your_dataset_of_step2 as b
                   on a.patient_sk=b.patient_sk ;
 ```
+
+### OUTPUT: input dataset for the screening tool
+Once all the previous steps are completed, you would already have a patient list who meets all those filtering requirements. Please then merge all the required information of these patients into one single dataset and clean up all the abnormities as specified in the previous section. 
+The data specification and a sample dataset can be found in [Appendix_2](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Appendix_2.xlsx). 
+This dataset will be used as the input dataset for the screening tool. Please save it as “.csv” file and place it in the local environment under screening tool folder “BoPDScreeningTool/Application Demo” (refer to next section). 
