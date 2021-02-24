@@ -39,19 +39,8 @@ We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data
 
 ## 2. Preparing input dataset for the screening tool
 The key steps are demonstrated in the flowchart below.![Flow chart ](/images/flowchart.png)
-In next section, more details are provided with sample SQL codes. The SQL codes are for demonstration purpose and please adjust them based on your database.
+More details are provided with sample SQL codes in the data preparation manual [Prepare_input_data.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Prepare_input_data.md). The SQL codes are for demonstration purpose and please adjust them based on your database.
 
-### INITIAL INPUT: datasets from EHR database
-Necessary fields to include: Unique subject identifier, diagnosis codes, visit dates, visit type, demographic information
-This process starts with integrating multiple datasets in EHR database. Usually, EHR data is stored as a relational database. Different information are stored in different datasets. For example, demographic information in one dataset, diagnosis information in another dataset, etc. Hence, those pieces of useful information need to be pulled from different tables.
-
-For this screening tool, the essential information includes demographic (age, gender), visit/encounter date (start date and end date), diagnosis codes in each encounter/visit and encounter type. Therefore, the initial step is to locate the necessary information for later use.
-
-
-### OUTPUT: input dataset for the screening tool
-Once all the previous steps are completed, you would already have a patient list who meets all those filtering requirements. Please then merge all the required information of these patients into one single dataset and clean up all the abnormities as specified in the previous section. 
-The data specification and a sample dataset can be found in [Appendix_2](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Appendix_2.xlsx). 
-This dataset will be used as the input dataset for the screening tool. Please save it as “.csv” file and place it in the local environment under screening tool folder “BoPDScreeningTool/Application Demo” (refer to step 6 in section 3.2 below). 
 
 
 ## 3. Execution of BoPDscreen 
