@@ -57,7 +57,7 @@ create table patient_list_of_step1 as
 	 on a.patient_sk=b.patient_sk
 	 where b.patient_sk is null
 ```
-#### Step 1.2 Gather all needed information
+* Step 1.2: Gather all needed information
 Once the patient list is obtained from the step 1.1, the next step is to gather all diagnosis codes since 2017-01-01. You can use similar SQL to select all visits/encounters and their non-missing diagnosis codes by using the patient_sk (unique patient identifier) you get from step 1.1. 
 After step 1.2, the output dataset should look exactly like the sample data in [Appendix_2](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Appendix_2.xlsx).
 > Sample code
