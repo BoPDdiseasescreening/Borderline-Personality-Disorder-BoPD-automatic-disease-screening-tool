@@ -7,7 +7,9 @@
 	- [1.3 Develop environment](#13-Develop-environment)
 	- [1.4 Data used to develop the algorithm (Nan)](#14-Data-used-to-develop-the-algorithm-Nan)
 - [2. Preparing input dataset for the screening tool](#2-Preparing-input-dataset-for-the-screening-tool)
-- [3. Execution of BoPDscreen](#3-Execution-of-BoPDscreen)
+- [3. Execution of BoPDscreen](#3-Execution-of-the-screening-tool)
+	- [3.1 Portable version](#31-Portable-version)
+	- [3.2 Headless version](#32-Headless-version)
 - [4. Reference](#4-Reference)
 - [5. License](#5-License)
 - [6. Publication](#6-Publication)
@@ -44,7 +46,7 @@ More details are provided with sample SQL codes in the data preparation manual [
 
 
 ## 3. Execution of the screening tool
-### 1. Portable version
+### 3.1 Portable version
 
 The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section.
 
@@ -52,7 +54,7 @@ The zip file attached contains full WinPython application and supporting documen
 
  ***Note**: The downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended.* 
 
-### 2. Headless version
+### 3.2 Headless version
 
 After preparing the input dataset as instructed, set the location of input dataset as default directory path, download attached CCSR coding document (v2020-2) to the same location and run the code file for screening result. Here is a built-in check for input data standards. If data quality check does not pass, here will be a warning message indicating the questionable part and the program will be terminated. Please revisit, fix it and rerun. 
 
