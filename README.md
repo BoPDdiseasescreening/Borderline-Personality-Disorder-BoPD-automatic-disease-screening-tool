@@ -43,7 +43,7 @@ More details are provided with sample SQL codes in the data preparation manual [
 
 
 
-## 3. Execution of BoPDscreen 
+## 3. Execution of the screening tool
 ### 1. Portable version
 
 The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section.
