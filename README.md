@@ -6,7 +6,7 @@
 	- [1.2 BoPD Automatic Screening Initiative](#12-BoPD-Automatic-Screening-Initiative)
 	- [1.3 Develop environment](#13-Develop-environment)
 	- [1.4 Data used to develop the algorithm (Nan)](#14-Data-used-to-develop-the-algorithm-Nan)
-- [2. Preparing input dataset for the screening tool](#2-Preparing-input-dataset-for-the-screening-tool)
+- [2. Preparation of input dataset for the screening tool](#2-Preparation-of-dataset-for-the-screening-tool)
 - [3. Execution of BoPDscreen](#3-Execution-of-the-screening-tool)
 	- [3.1 Portable version](#31-Portable-version)
 	- [3.2 Headless version](#32-Headless-version)
@@ -39,7 +39,7 @@ The portable WinPython can be implemented under windows operation system (Micros
 ### 1.4 Data used to develop the algorithm (Nan)
 We use de-identified Electronic Health Record (EHR) from Cerner Health Fact data. Data in Health Facts is directly extracted from Electronic Medical Records (EMR) from hospitals who has data use agreement with Cerner. Encounters may include pharmacy, clinical and microbiology laboratory, admission, and billing information from affiliated patient care locations.  Date and time stamps are included for all admissions, medication orders and dispensing, laboratory orders and specimens, providing a temporal relationship between treatment patterns and clinical information. Cerner Corporation has established operating policies ensure that all data in the Health Facts database are fully de-identified in compliance with the Health Insurance Portability and Accountability Act. Currently Health Facts database contains information from approximately 69 million US patients, with data collected from 2000 to 2018 (most between 2009 and 2018).
 
-## 2. Preparing input dataset for the screening tool
+## 2. Preparation of input dataset for the screening tool
 The key steps are demonstrated in the flowchart below.![Flow chart ](/images/flowchart.png)
 More details are provided with sample SQL codes in the data preparation manual [Prepare_input_data.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Prepare_input_data.md). The SQL codes are for demonstration purpose and please adjust them based on your database.
 
