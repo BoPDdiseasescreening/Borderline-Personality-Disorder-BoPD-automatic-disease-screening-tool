@@ -97,8 +97,8 @@ Identifying potentially undiagnosed borderline personality disorder from a large
 Screening Borderline Personality Disorder Patients from Real-World Data under Limited Supervision. (In preparation)
 
 
-
-
+## 7. Acknowledgement
+Boehringer Ingelheim International GmbH supported this project. We collaborated with Dr. Marianne Goodman from James J Peters VA Medical Center / Icahn School of Medicine at Mount Sinai, who is the clinical expert in BoPD, and Dr. Chengxi Zang and Dr. Fei Wang from Weill Cornell Medicine, who are the machine learning / AI experts in health data science. 
 
 
 
