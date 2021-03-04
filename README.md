@@ -94,7 +94,7 @@ Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, May). Automatic sc
 
 Shao, N., Goodman, M., Zang, C., Zhu, Z., Tamas, Z., Ovens, R., Koczon-Jaremko, A., Sharma, V.M. (2021, August). Automatic disease screening of borderline personality disorder using electronic health records (EHR). Joint Statistical Meetings (JSM) 2021, Seattle, WA, United States.
 
-Shao, N., Goodman, M., Zang, C., Sharma, V.M. (2021, September) Disease screening for a personality disorder using Electronic Health Records (EHR) data. International Chinese Statistical Association Applied Statistics Symposium (ICSA) 2021, virtual conference.
+Shao, N., Goodman, M., Zang, C., Sharma, V.M. (2021, September). Disease screening for a personality disorder using Electronic Health Records (EHR) data. International Chinese Statistical Association Applied Statistics Symposium (ICSA) 2021, virtual conference.
 
 
 ## 7. Acknowledgement
