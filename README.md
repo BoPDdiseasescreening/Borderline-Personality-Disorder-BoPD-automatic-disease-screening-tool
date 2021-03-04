@@ -9,7 +9,8 @@
 - [4. License](#4-License)
 - [5. References](#5-References)
 - [6. Publication & Conference](#6-publication--conference)
-- [7. Aknowledgement](#7-aknowledgement)
+- [7. Acknowledgement](#7-acknowledgement)
+
 
 
 
