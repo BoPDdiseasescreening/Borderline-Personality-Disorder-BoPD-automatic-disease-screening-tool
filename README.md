@@ -6,8 +6,8 @@
 - [3. Execution of BoPDscreen](#3-Execution-of-the-screening-tool)
 	- [3.1 Portable version](#31-Portable-version)
 	- [3.2 Headless version](#32-Headless-version)
-- [4. Reference](#4-Reference)
-- [5. License](#5-License)
+- [4. License](#4-License)
+- [5. Reference](#5-Reference)
 - [6. Publication & Conference](#6-publication--conference)
 
 
