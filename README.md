@@ -2,7 +2,7 @@
 
 # Table of Contents
 - [1. Overview](#1-overview)
-- [2. Preparation of input dataset for the screening tool](#2-Preparation-of-dataset-for-the-screening-tool)
+- [2. Preparation of input dataset for the screening tool](#2-preparation-of-input-dataset-for-the-screening-tool)
 - [3. Execution of BoPDscreen](#3-Execution-of-the-screening-tool)
 	- [3.1 Portable version](#31-Portable-version)
 	- [3.2 Headless version](#32-Headless-version)
