@@ -29,7 +29,6 @@ Details of the data and algorithm development can be found in [Publication & Con
 
 In addition, we have integrated the algorithm into a screening tool in both portable version ([section 3.1](#31-Portable-version)) and headless version ([section 3.2](#32-Headless-version)) for implementation. The portable version is developed in WinPython with graphical interface, where WinPython is a portable distribution of Python programming language for Windows, and therefore it only requires Windows operating system without the need to install Python. The headless version includes executable Python source code and therefore it requires an environment to execute Python (version 3.8). Prior to using either version of the tool, patient EHR data needs to be preprocessed in specific format as the input dataset for the screening tool (details see [section 2](#2-Preparing-input-dataset-for-the-screening-tool)). 
 
-This screening tool has been rolled out and is being piloted at sites in US. 
 
 ## 2. Preparation of input dataset for the screening tool
 The key steps are demonstrated in the flowchart below.![Flow chart ](/images/flowchart.png)
@@ -88,13 +87,13 @@ Identifying potentially undiagnosed borderline personality disorder from a large
 
 Screening Borderline Personality Disorder Patients from Real-World Data under Limited Supervision. (In preparation)
 
-Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, May). Identifying both diagnosed and potentially undiagnosed patients with borderline personality disorder from a large electronic health record database. American Psychiatric Association Annual Meeting (APA), virtual conference.
-
-Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, May). Automatic screening of borderline personality disorder using electronic health record data. North American Society for the Study of Personality Disorders (NASSPD), virtual conference.
-
 Shao, N., Goodman, M., Zang, C., Zhu, Z., Tamas, Z., Ovens, R., Koczon-Jaremko, A., Sharma, V.M. (2021, August). Automatic disease screening of borderline personality disorder using electronic health records (EHR). Joint Statistical Meetings (JSM) 2021, Seattle, WA, United States.
 
-Shao, N., Goodman, M., Zang, C., Sharma, V.M. (2021, September). Disease screening for a personality disorder using Electronic Health Records (EHR) data. International Chinese Statistical Association Applied Statistics Symposium (ICSA) 2021, virtual conference.
+Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, April). Automatic screening of borderline personality disorder using electronic health record data. North American Society for the Study of Personality Disorders (NASSPD), virtual conference.
+
+Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, May). Identifying both diagnosed and potentially undiagnosed patients with borderline personality disorder from a large electronic health record database. American Psychiatric Association Annual Meeting (APA), virtual conference.
+
+Shao, N., Goodman, M., Zang, C., Sharma, V.M. (2020, December). Disease screening for a personality disorder using Electronic Health Records (EHR) data. International Chinese Statistical Association Applied Statistics Symposium (ICSA) 2020, virtual conference.
 
 
 ## 7. Acknowledgement
