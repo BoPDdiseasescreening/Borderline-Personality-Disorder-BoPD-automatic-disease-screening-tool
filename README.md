@@ -8,7 +8,7 @@
 	- [3.2 Headless version](#32-Headless-version)
 - [4. Reference](#4-Reference)
 - [5. License](#5-License)
-- [6. Publication](#6-Publication)
+- [6. Publication & Conference](#6-publication--conference)
 
 
 
