@@ -84,6 +84,16 @@ Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Lev
 
 Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Levin, A., & Reynolds, V. (1998b). Axis II comorbidity of borderline personality disorder. *Compr Psychiatry, 39*(5), 296-302. doi:10.1016/s0010-440x(98)90038-4
 
+1.	Ellison, W.D., et al., Community and Clinical Epidemiology of Borderline Personality Disorder. Psychiatr Clin North Am, 2018. 41(4): p. 561-573.
+2.	Lieb, K., et al., Borderline personality disorder. Lancet, 2004. 364(9432): p. 453-61.
+3.	Gunderson, J.G., et al., Borderline personality disorder. Nat Rev Dis Primers, 2018. 4: p. 18029.
+4.	Sansone, R.A. and L.A. Sansone, BORDERLINE PERSONALITY DISORDER IN THE MEDICAL SETTING: Suggestive Behaviors, Syndromes, and Diagnoses. Innov Clin Neurosci, 2015. 12(7-8): p. 39-44.
+5.	Zanarini, M.C., et al., Axis II comorbidity of borderline personality disorder. Compr Psychiatry, 1998. 39(5): p. 296-302.
+6.	Zanarini, M.C., et al., Axis I comorbidity of borderline personality disorder. Am J Psychiatry, 1998. 155(12): p. 1733-9.
+7.	National Institute of Mental Health. Borderline Personality Disorder. 2017 October 2020]; Available from: https://www.nimh.nih.gov/health/topics/borderline-personality-disorder/index.shtml.
+8.	Ruggero, C.J., et al., Borderline personality disorder and the misdiagnosis of bipolar disorder. J Psychiatr Res, 2010. 44(6): p. 405-8.
+
+
 ## 6. Publication & Conference
 
 Characterization of borderline personality disorder using a large electronic health record database: potential for the development of a disease screening algorithm. (In preparation)
