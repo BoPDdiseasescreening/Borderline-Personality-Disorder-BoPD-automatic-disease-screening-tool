@@ -88,6 +88,14 @@ Identifying potentially undiagnosed borderline personality disorder from a large
 
 Screening Borderline Personality Disorder Patients from Real-World Data under Limited Supervision. (In preparation)
 
+Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, May). Identifying both diagnosed and potentially undiagnosed patients with borderline personality disorder from a large electronic health record database. American Psychiatric Association Annual Meeting (APA), virtual conference.
+
+Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, May). Automatic screening of borderline personality disorder using electronic health record data. North American Society for the Study of Personality Disorders (NASSPD), virtual conference.
+
+Shao, N., Goodman, M., Zang, C., Zhu, Z., Tamas, Z., Ovens, R., Koczon-Jaremko, A., Sharma, V.M. (2021, August). Automatic disease screening of borderline personality disorder using electronic health records (EHR). Joint Statistical Meetings (JSM) 2021, Seattle, WA, United States.
+
+Shao, N., Goodman, M., Zang, C., Sharma, V.M. (2021, September) Disease screening for a personality disorder using Electronic Health Records (EHR) data. International Chinese Statistical Association Applied Statistics Symposium (ICSA) 2021, virtual conference.
+
 
 ## 7. Acknowledgement
 Boehringer Ingelheim International GmbH supported this project. We collaborated with Dr. Marianne Goodman from James J Peters VA Medical Center / Icahn School of Medicine at Mount Sinai, who is the clinical expert in BoPD, and Dr. Chengxi Zang and Dr. Fei Wang from Weill Cornell Medicine, who are the machine learning / AI experts in health data science. 
