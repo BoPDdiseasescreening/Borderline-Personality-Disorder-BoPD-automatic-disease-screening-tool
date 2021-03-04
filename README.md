@@ -7,7 +7,7 @@
 	- [3.1 Portable version](#31-Portable-version)
 	- [3.2 Headless version](#32-Headless-version)
 - [4. License](#4-License)
-- [5. Reference](#5-Reference)
+- [5. References](#5-References)
 - [6. Publication & Conference](#6-publication--conference)
 
 
@@ -70,20 +70,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## 5. References
 
-American Psychiatric Association. (2013). *Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition*. Arlington VA: American Psychiatric Association.
-
-Ellison, W. D., Rosenstein, L. K., Morgan, T. A., & Zimmerman, M. (2018). Community and Clinical Epidemiology of Borderline Personality Disorder. *Psychiatr Clin North Am, 41*(4), 561-573. doi:10.1016/j.psc.2018.07.008
-
-Limandri, B. J. (2018). Psychopharmacology for Borderline Personality Disorder. *J Psychosoc Nurs Ment Health Serv, 56*(4), 8-11. doi:10.3928/02793695-20180319-01
-
-Lieb, K., Zanarini, M. C., Schmahl, C., Linehan, M. M., & Bohus, M. (2004). Borderline personality disorder. *Lancet, 364*(9432), 453-461. doi:10.1016/s0140-6736(04)16770-6
-
-Ruggero, C. J., Zimmerman, M., Chelminski, I., & Young, D. (2010). Borderline personality disorder and the misdiagnosis of bipolar disorder. *J Psychiatr Res, 44*(6), 405-408. doi:10.1016/j.jpsychires.2009.09.011
-
-Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Levin, A., & Reynolds, V. (1998a). Axis I comorbidity of borderline personality disorder. *Am J Psychiatry, 155*(12), 1733-1739. doi:10.1176/ajp.155.12.1733
-
-Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Levin, A., & Reynolds, V. (1998b). Axis II comorbidity of borderline personality disorder. *Compr Psychiatry, 39*(5), 296-302. doi:10.1016/s0010-440x(98)90038-4
-
 1.	Ellison, W.D., et al., Community and Clinical Epidemiology of Borderline Personality Disorder. Psychiatr Clin North Am, 2018. 41(4): p. 561-573.
 2.	Lieb, K., et al., Borderline personality disorder. Lancet, 2004. 364(9432): p. 453-61.
 3.	Gunderson, J.G., et al., Borderline personality disorder. Nat Rev Dis Primers, 2018. 4: p. 18029.
@@ -92,7 +78,6 @@ Zanarini, M. C., Frankenburg, F. R., Dubo, E. D., Sickel, A. E., Trikha, A., Lev
 6.	Zanarini, M.C., et al., Axis I comorbidity of borderline personality disorder. Am J Psychiatry, 1998. 155(12): p. 1733-9.
 7.	National Institute of Mental Health. Borderline Personality Disorder. 2017 October 2020]; Available from: https://www.nimh.nih.gov/health/topics/borderline-personality-disorder/index.shtml.
 8.	Ruggero, C.J., et al., Borderline personality disorder and the misdiagnosis of bipolar disorder. J Psychiatr Res, 2010. 44(6): p. 405-8.
-
 
 ## 6. Publication & Conference
 
