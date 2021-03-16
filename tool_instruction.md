@@ -2,15 +2,16 @@
 ## Step-by-step implementation guide
  
  
-**Step 0.** Save and unzip BoPDScreeningTool.zip file under C:/, otherwise the application can’t be initiated.  
-Note: The downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended. 
+**Step 0.** Save and unzip BoPDScreeningTool.zip file. 
 
 **Step 1.** Place the input dataset prepared from the previous section under folder “BoPDScreeningTool/Application Demo”, and it should be saved as .csv file. 
 Here are already preloaded files working as required built-in components for running the screening tool. The input sample dataset, gold_test.csv, is for testing purpose. 
 
 ![  ](images/step1.png)
  
-**Step 2.** Open “tool.bat” (highlighted in yellow below) .  
+**Step 2.** Open “tool.bat” (highlighted in yellow below).
+
+***Note**: If regular python is used, please use Spyder to execute main.py script in the Application Demo folder.* 
 
 ![  ](images/step2.png)
 
