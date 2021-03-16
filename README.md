@@ -37,13 +37,15 @@ More details are provided with sample SQL codes in the data preparation manual [
 
 
 ## 3. Execution of the screening tool
-### 3.1 Portable version
+### 3.1 Portable version 
 
-The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section.
+The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section. The vesrion used for development is Winpython64-3.8.3.0 which could be downloaded from [Sourceforge](https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.3.0/). 
+
+ ***Note**: The software downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended.* 
 
 The zip file attached contains full WinPython application and supporting document needed for execution. Please see the tool maunal [tool_instruction.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/tool_instruction.md) for detailed execution instructions.
 
- ***Note**: The downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended.* 
+ ***Note**: Executing on WinPython is optional. It helps to make the tool as a protable distribtuion even for users without Python or with difficulty installing Python on the computer. If here is installed Python3.8 already, the screening tool script from the zip file could be executed directly through local Spyder.* 
 
 ### 3.2 Headless version
 
