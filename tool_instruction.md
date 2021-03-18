@@ -5,13 +5,13 @@
 **Step 0.** Save and unzip BoPDScreeningTool.zip file. 
 
 **Step 1.** Place the input dataset prepared from the previous section under folder “BoPDScreeningTool/Application Demo”, and it should be saved as .csv file. 
-Here are already preloaded files working as required built-in components for running the screening tool. The input sample dataset, gold_test.csv, is for testing purpose. 
+There are already preloaded files working as required built-in components for running the screening tool. The input sample dataset, gold_test.csv, is for testing purpose. 
 
 ![  ](images/step1.png)
  
 **Step 2.** Open “tool.bat” (highlighted in yellow below).
 
-***Note**: If regular python is used, please use Spyder to execute main.py script in the Application Demo folder.* 
+***Note**: If local python is used, please execute main.py script directly in the Application Demo folder.* 
 
 ![  ](images/step2.png)
 
