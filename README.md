@@ -27,7 +27,7 @@ Results of the screening algorithm were encouraging. The out-of-sample test resu
 
 Details of the data and algorithm development can be found in [Publication & Conference](#6-publication--conference).
 
-In addition, we have integrated the algorithm into a screening tool in both portable version ([section 3.1](#31-Portable-version)) and headless version ([section 3.2](#32-Headless-version)) for implementation. The portable version is developed in WinPython with graphical interface, where WinPython is a portable distribution of Python programming language for Windows, and therefore it only requires Windows operating system without the need to install Python. The headless version includes executable Python source code and therefore it requires an environment to execute Python (version 3.8). Prior to using either version of the tool, patient EHR data needs to be preprocessed in specific format as the input dataset for the screening tool (details see [section 2](#2-Preparing-input-dataset-for-the-screening-tool)). 
+In addition, we have integrated the algorithm into a screening tool in both portable version ([section 3.1](#31-Portable-version)) and headless version ([section 3.2](#32-Headless-version)) for implementation. The portable version is developed in WinPython with graphical interface, where WinPython is a portable distribution of Python programming language for Windows, and therefore it only requires Windows operating system without the need to install Python. The headless version includes executable Python source code and requires Python (version 3.8) environment but does not generate a graphical user interface. Prior to using either version of the tool, patient EHR data needs to be preprocessed in specific format as the input dataset for the screening tool (details see [section 2](#2-Preparing-input-dataset-for-the-screening-tool)). 
 
 
 ## 2. Preparation of input dataset for the screening tool
@@ -39,31 +39,15 @@ More details are provided with sample SQL codes in the data preparation manual [
 ## 3. Execution of the screening tool
 ### 3.1 Portable version 
 
-The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section. The vesrion used for development is Winpython64-3.8.3.0 which could be downloaded from [Sourceforge](https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.3.0/). 
+The screening tool aims at providing a centralized place to process built-in functions and deliver patient screening results. The tool is embeded in a TKinter GUI as an interactive interface for functionality. It is based on WinPython, a portable distribution of Python programming language for Windows and be implemented on a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in the next section. The vesrion used for development is Winpython64-3.8.3.0 which could be downloaded from [Sourceforge](https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.3.0/). 
 
- ***Note**: The software downloading can take approximate 1 hour to 3 hours depending on the internet speed; to unzip the file, overnight unzipping is recommended.* 
+The zip file [BoPDdiseasescreening.zip](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/BoPDScreeningTool.zip) contains supporting document needed for execution. Please download the file and refer to the tool maunal [tool_instruction.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/tool_instruction.md) for detailed execution instructions.
 
-The zip file attached contains full WinPython application and supporting document needed for execution. Please see the tool maunal [tool_instruction.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/tool_instruction.md) for detailed execution instructions.
-
- ***Note**: Executing on WinPython is optional. It helps to make the tool as a protable distribtuion even for users without Python or with difficulty installing Python on the computer. If here is installed Python3.8 already, the screening tool script from the zip file could be executed directly through local Spyder.* 
+ ***Note**: Executing on WinPython is optional. It helps to make the tool as a protable distribtuion even for users without Python or with difficulty installing Python on the computer. If here is installed Python3.8 already, the screening tool script from the zip file could be executed directly through local Python.* 
 
 ### 3.2 Headless version
 
-After preparing the input dataset as instructed, set the location of input dataset as default directory path, download attached CCSR coding document (v2020-2) to the same location and run the code file for screening result. Here is a built-in check for input data standards. If data quality check does not pass, here will be a warning message indicating the questionable part and the program will be terminated. Please revisit, fix it and rerun. 
-
-Main parts of the package: 
-
-I.	Load in Dataset
-
-II.	 Data quality check
-
-III.	Data Preprocessing
-
-IV.	Apply pre-defined inclusion/ exclusion criteria.
-
-V.	Feature Engineering
-
-VI.	Screening Model Implementation
+If a GUI is not needed, the headless version is provided to give the list of patient screening results through executing the code under python environment. The zip file [BoPDdiseasescreening_headless.zip](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/BoPDScreening_headless.zip) contains supporting document needed for execution. Please downlaod the file and unzip it under C:/ root and refer to read me.txt file for further instructions.
 
 
 ## 4. License 
