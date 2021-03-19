@@ -47,7 +47,7 @@ The zip file [BoPDdiseasescreening.zip](https://github.com/BoPDdiseasescreening/
 
 ### 3.2 Headless version
 
-If a GUI is not needed, the headless version is provided to give the list of patient screening results through executing the code under python environment. The zip file [BoPDdiseasescreening_headless.zip](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/BoPDScreening_headless.zip) contains supporting document needed for execution. Please downlaod the file and unzip it under C:/ root and refer to read me.txt file for further instructions.
+If graphical user interface is not needed, the headless version is provided to give the list of patient screening results through executing the script directly under python environment. The zip file [BoPDdiseasescreening_headless.zip](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/BoPDScreening_headless.zip) contains supporting document needed for execution. Please downlaod the file and unzip it under C:/ root and refer to read me.txt file for further instructions.
 
 
 ## 4. License 
