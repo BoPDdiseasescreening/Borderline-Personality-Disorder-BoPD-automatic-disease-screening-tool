@@ -3,7 +3,7 @@
 # Table of Contents
 - [1. Overview](#1-overview)
 - [2. Preparation of input dataset for the screening tool](#2-preparation-of-input-dataset-for-the-screening-tool)
-- [3. Execution of BoPDscreen](#3-Execution-of-the-screening-tool)
+- [3. Execution of the screening tool](#3-Execution-of-the-screening-tool)
 	- [3.1 Portable version](#31-Portable-version)
 	- [3.2 Headless version](#32-Headless-version)
 - [4. License](#4-License)
@@ -22,6 +22,8 @@ Misdiagnosis of BoPD has serious clinical implications given distinct therapies 
 To advance the timely identification of misdiagnosed or under-diagnosed patients with BoPD, we have developed a machine learning algorithm utilizing electronic health record (EHR) data to automatically screen patients likely to have BoPD, but without a formal diagnosis. Our overarching goal is to facilitate and inform real-world clinical decision-making by enabling earlier identification of BoPD through automated screening of EHRs. 
 
 Using de-identified structured electronic health records (EHRs) from the US-based Cerner Health Fact database and a clinical expert’s rating of the likelihood of having BoPD for 456 potential BoPD patient records from the database, we have developed the BoPD screening algorithm. The screening algorithm to identify individuals highly likely to have BoPD utilizes information such as patients’ diagnosis history, demographics, encounter types (emergency room, outpatient visit and hospitalization) and frequencies as inputs. The algorithm incorporates a clinical understanding of BoPD, including associations with bipolar disorder, and suicidal/intentional self-harm; a hallmark of the disease. Due to the large gap between vast unlabeled patient EHR data relative to a few hundred labelled patients (i.e. expert ratings), we implemented a knowledge-enriched, semi-supervised learning framework.
+
+Please note that the algorithm does NOT make diagnosis decision; it is intended to make recommendation to Health care personnels (HCPs) on screening for BoPD. HCPs should rely on their own judgement to make clinical decisions for individual patients. 
 
 Results of the screening algorithm were encouraging. The out-of-sample test results show an area under the receiver operating characteristics (AUROC) of 0.84, and positive predictive value of 0.72 indicating that for every 10 patients identified by the algorithm, on average 7 of them are highly likely to be patients with BoPD. Accuracy is 0.82 and sensitivity and specificity are 0.54 and 0.92, respectively. 
 
@@ -43,7 +45,7 @@ The screening tool aims at providing a centralized place to process built-in fun
 
 The zip file [BoPDdiseasescreening.zip](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/BoPDScreeningTool.zip) contains supporting document needed for execution. Please download the file and refer to the tool maunal [tool_instruction.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/tool_instruction.md) for detailed execution instructions. WinPython has already embeded many commonly used modules but the module, skorch, was not included and needs further installation. Detailed installation instruction can be found in *dependency version.txt* under dependency folder.
 
- ***Note**: Executing on WinPython is optional. It helps to make the tool as a protable distribtuion even for users without Python or with difficulty installing Python on the computer. If here is installed Python3.8 already, the screening tool script from the zip file could be executed directly through local Python. Deatialed instructions of execution can be found in the tool maunal [tool_instruction.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/tool_instruction.md) as well.* 
+ ***Note**: Executing on WinPython is optional. It helps to make the tool as a protable distribtuion even for users without Python or with difficulty installing Python on the computer. If Python3.8 is already installed, the screening tool script from the zip file could be executed directly through local Python. Deatialed instructions of execution can be found in the tool maunal [tool_instruction.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/tool_instruction.md) as well.* 
 
 ### 3.2 Headless version
 
