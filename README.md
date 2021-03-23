@@ -23,7 +23,7 @@ To advance the timely identification of misdiagnosed or under-diagnosed patients
 
 Using de-identified structured electronic health records (EHRs) from the US-based Cerner Health Fact database and a clinical expert’s rating of the likelihood of having BoPD for 456 potential BoPD patient records from the database, we have developed the BoPD screening algorithm. The screening algorithm to identify individuals highly likely to have BoPD utilizes information such as patients’ diagnosis history, demographics, encounter types (emergency room, outpatient visit and hospitalization) and frequencies as inputs. The algorithm incorporates a clinical understanding of BoPD, including associations with bipolar disorder, and suicidal/intentional self-harm; a hallmark of the disease. Due to the large gap between vast unlabeled patient EHR data relative to a few hundred labelled patients (i.e. expert ratings), we implemented a knowledge-enriched, semi-supervised learning framework.
 
-Please note that the algorithm does NOT make diagnosis decision; it is intended to make recommendation to Health care personnels (HCPs) on screening for BoPD. HCPs should rely on their own judgement to make clinical decisions for individual patients. 
+Please note that the algorithm does NOT make diagnosis decision; it is intended to make recommendation to health care personnels (HCPs) on screening for BoPD. HCPs should rely on their own judgement to make clinical decisions for individual patients. 
 
 Results of the screening algorithm were encouraging. The out-of-sample test results show an area under the receiver operating characteristics (AUROC) of 0.84, and positive predictive value of 0.72 indicating that for every 10 patients identified by the algorithm, on average 7 of them are highly likely to be patients with BoPD. Accuracy is 0.82 and sensitivity and specificity are 0.54 and 0.92, respectively. 
 
@@ -41,9 +41,9 @@ More details are provided with sample SQL codes in the data preparation manual [
 ## 3. Execution of the screening tool
 ### 3.1 Portable version 
 
-The tool in portable version is embeded in a TKinter GUI as an interactive interface for functionality. If installation of python 3.8 is challenging, we suggest to consider WinPython for execution. 
+The tool in portable version is embeded in a TKinter GUI as an interactive interface for functionality. If installation of python 3.8 is challenging, we suggest to consider WinPython for implementation. 
 
-To execute in WinPython, please follow the steps as follows. 
+To execute in WinPython, please follow these steps. 
 	1) Download Winpython64-3.8.3.0 from [Sourceforge](https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.3.0/). WinPython requires a regular PC with Windows 8 or higher version, with >=4GB free space on C drive. Additional C drive space is needed for placing the dataset prepared from the previous section and it depends on the size of the dataset. The memory requirement depends on the volume of data and details can be found in tool maunal [tool_instruction.md]. 
 	2) Download the zip file [BoPDdiseasescreening.zip](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/BoPDScreeningTool.zip) which contains codes/supporting documents needed for executing the screening tool.
 	3) Install module "skorch" in WinPython; detailed instruction can be found in *dependency version.txt* under dependency folder in the zip file [BoPDdiseasescreening.zip](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/BoPDScreeningTool.zip). 
