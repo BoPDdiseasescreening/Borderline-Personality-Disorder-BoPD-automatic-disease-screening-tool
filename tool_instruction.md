@@ -2,7 +2,7 @@
 ## Step-by-step implementation guide
  
  
-**Step 0.** Save and unzip BoPDScreeningTool.zip file under C:/. 
+**Step 0.** Save and unzip BoPDScreeningTool.zip file under C:/ root. 
 
 **Step 1.** Place the input dataset prepared from section 2 under folder “BoPDScreeningTool/Application Demo”, and it should be saved as .csv file. 
 There are already preloaded files working as required built-in components for running the screening tool. The input sample dataset, gold_test.csv, is for testing purpose. 
