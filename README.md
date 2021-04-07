@@ -2,8 +2,8 @@
 
 # Table of Contents
 - [1. Overview](#1-overview)
-- [2. Preparation of input dataset for the screening algorithm](#2-preparation-of-input-dataset-for-the-screening-tool)
-- [3. Execution of the screening algorithm](#3-Execution-of-the-screening-tool)
+- [2. Preparation of input dataset for the screening algorithm](#2-preparation-of-input-dataset-for-the-screening-algorithm)
+- [3. Execution of the screening algorithm](#3-Execution-of-the-screening-algorithm)
 	- [3.1 Portable version](#31-Portable-version)
 	- [3.2 Headless version](#32-Headless-version)
 - [4. License](#4-License)
