@@ -31,7 +31,7 @@ Results of the screening algorithm were encouraging. The out-of-sample test resu
 
 Details of the data and algorithm development can be found in [Publication & Conference](#6-publication--conference).
 
-In addition, we have integrated the algorithm into a screening tool in both portable version ([section 3.1](#31-Portable-version)) and headless version ([section 3.2](#32-Headless-version)) for implementation. The portable version has graphical user interface, and it can be executed in WinPython (a portable distribution of Python programming language for Windows without the need to install Python) or Python 3.8. The headless version includes executable Python source code without a graphical user interface and it requires Python 3.8. Prior to using either version of the tool, patient EHR data needs to be preprocessed in specific format as the input dataset for the screening tool (details see [section 2](#2-Preparing-input-dataset-for-the-screening-tool)). 
+In addition, we have integrated the algorithm into a screening tool in both portable version ([section 3.1](#31-Portable-version)) and headless version ([section 3.2](#32-Headless-version)) for implementation. The portable version has graphical user interface, and it can be executed in WinPython (a portable distribution of Python programming language for Windows without the need to install Python) or Python 3.8. The headless version includes executable Python source code without a graphical user interface and it requires Python 3.8. Prior to using either version of the tool, patient EHR data needs to be preprocessed in specific format as the input dataset for the screening tool (details see [section 2](#2-Preparing-input-dataset-for-the-screening-algorithm)). 
 
 
 ## 2. Preparation of input dataset for the screening algorithm
@@ -78,13 +78,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 Characterization of borderline personality disorder using a large electronic health record database: potential for the development of a disease screening algorithm. (In preparation)
 
-Identifying potentially undiagnosed borderline personality disorder from a large electronic health record database to aid the development of an automatic screening initiative. (In preparation)
+Identifying potentially undiagnosed borderline personality disorder from a large electronic health record database to aid the development of a disease screening algorithm. (In preparation)
 
 Screening Borderline Personality Disorder Patients from Real-World Data under Limited Supervision. (In preparation)
 
 Shao, N., Goodman, M., Zang, C., Zhu, Z., Tamas, Z., Ovens, R., Koczon-Jaremko, A., Sharma, V.M. (2021, August). Automatic disease screening of borderline personality disorder using electronic health records (EHR). Joint Statistical Meetings (JSM) 2021, Seattle, WA, United States.
 
-Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, April). Automatic screening of borderline personality disorder using electronic health record data. North American Society for the Study of Personality Disorders (NASSPD), virtual conference.
+Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, April). Identifying both diagnosed and potentially undiagnosed patients with borderline personality disorder from a large electronic health record database. North American Society for the Study of Personality Disorders (NASSPD), virtual conference.
 
 Goodman, M., Zhu, Z., Tamas, Z., Sharma, V.M., Shao, N.(2021, May). Identifying both diagnosed and potentially undiagnosed patients with borderline personality disorder from a large electronic health record database. American Psychiatric Association Annual Meeting (APA), virtual conference.
 
