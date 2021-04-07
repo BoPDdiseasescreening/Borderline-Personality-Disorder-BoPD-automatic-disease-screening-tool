@@ -1,9 +1,9 @@
-# Borderline Personality Disorder (BoPD) automatic disease screening tool
+# Borderline Personality Disorder (BoPD) disease screening algorithm
 
 # Table of Contents
 - [1. Overview](#1-overview)
-- [2. Preparation of input dataset for the screening tool](#2-preparation-of-input-dataset-for-the-screening-tool)
-- [3. Execution of the screening tool](#3-Execution-of-the-screening-tool)
+- [2. Preparation of input dataset for the screening algorithm](#2-preparation-of-input-dataset-for-the-screening-tool)
+- [3. Execution of the screening algorithm](#3-Execution-of-the-screening-tool)
 	- [3.1 Portable version](#31-Portable-version)
 	- [3.2 Headless version](#32-Headless-version)
 - [4. License](#4-License)
@@ -19,28 +19,28 @@
 Borderline personality disorder (BoPD) is a serious psychological condition that affects 1–2% of the general population, and approximately 10% and 20% of psychiatric outpatients and inpatients, respectively [1, 2]. The disorder is characterized by chronic disinhibition, extreme sensitivity, volatile emotions, self-harm, impulsive behaviors and high mortality rate due to suicide (up to 10%) [3, 4]. Indeed, the suicide rate amongst patients with BoPD is approximately 50 times higher than that of the general population [2]. In addition, BoPD is a complex personality disorder that has many comorbid conditions, such as anxiety, depression, and bipolar disorder [5-7]. As such, patients with BoPD are often misdiagnosed, with almost 40% reporting a previous misdiagnosis; the corresponding proportion among patients with other psychological disorders is only 10% [8]. 
 Misdiagnosis of BoPD has serious clinical implications given distinct therapies are developed for each disorder [8], which can result in patients receiving inappropriate treatment. 
 
-To advance the timely identification of misdiagnosed or under-diagnosed patients with BoPD, we have developed a machine learning algorithm utilizing electronic health record (EHR) data to automatically screen patients likely to have BoPD, but without a formal diagnosis. Our overarching goal is to facilitate and inform real-world clinical decision-making by enabling earlier identification of BoPD through automated screening of EHRs. 
+To advance the timely identification of misdiagnosed or under-diagnosed patients with BoPD, we have developed a machine learning algorithm utilizing electronic health record (EHR) data to automatically identify patients with specific characteristics that suggest they may potentially have BoPD, but without a formal diagnosis. Our overarching goal is to provide an additional resource that could help facilitate and inform real-world clinical decision-making by potentially enabling earlier identification of BoPD by first conducting automated screening of EHRs. 
 
-The algorithm is intended for health care personnels (HCPs) and it makes recommendation on screening for BoPD. The algorithm does NOT make diagnosis decision, and HCPs should rely on their own judgement to make clinical decisions for individual patients. In addition, the algorithm is developed using US coding system (ICD-10-CM), and therefore it is applicable in US at the moment.
+The algorithm is intended for health care personnels (HCPs) and it makes recommendation on which patients may benefit from formal screening for BoPD. The algorithm does NOT make diagnosis decision, and HCPs should rely on their own judgement to make clinical decisions for individual patients. In addition, the algorithm is developed using US coding system (ICD-10-CM), and therefore it is applicable in US at the moment.
 
-Using de-identified structured electronic health records (EHRs) from the US-based Cerner Health Fact database and a clinical expert’s rating of the likelihood of having BoPD for 456 potential BoPD patient records from the database, we have developed the BoPD screening algorithm. The screening algorithm to identify individuals highly likely to have BoPD utilizes information such as patients’ diagnosis history, demographics, encounter types (emergency room, outpatient visit and hospitalization) and frequencies as inputs. The algorithm incorporates a clinical understanding of BoPD, including associations with bipolar disorder, and suicidal/intentional self-harm; a hallmark of the disease. Due to the large gap between vast unlabeled patient EHR data relative to a few hundred labelled patients (i.e. expert ratings), we implemented a knowledge-enriched, semi-supervised learning framework.
+Using de-identified structured electronic health records (EHRs) from the US-based Cerner Health Fact database and a clinical expert’s rating of the likelihood of having BoPD for 456 potential BoPD patient records from the database, we have developed the BoPD screening algorithm. The screening algorithm to identify individuals most likely to have BoPD utilizes information such as patients’ diagnosis history, demographics, encounter types (emergency room, outpatient visit and hospitalization) and frequencies as inputs. The algorithm incorporates a clinical understanding of BoPD, including associations with bipolar disorder, and suicidal/intentional self-harm; a hallmark of the disease. Due to the large gap between vast unlabeled patient EHR data relative to a few hundred labelled patients (i.e. expert ratings), we implemented a knowledge-enriched, semi-supervised learning framework.
 
 When developing the screening algorithm, model interpretability was important because providing clarity and transparency into how algorithm makes decision is critical to us. In fact, we have explored several machine learning models including “blackbox” models, the interpretable model stands out and it is shared here. 
 
-Results of the screening algorithm were encouraging. The out-of-sample test results show an area under the receiver operating characteristics (AUROC) of 0.84, and positive predictive value of 0.72 indicating that for every 10 patients identified by the algorithm, on average 7 of them are highly likely to be patients with BoPD. Accuracy is 0.82 and sensitivity and specificity are 0.54 and 0.92, respectively. 
+Results of the screening algorithm were encouraging. The out-of-sample test results show an area under the receiver operating characteristics (AUROC) of 0.84, and positive predictive value of 0.72 indicating that for every 10 patients identified by the algorithm, on average 7 of them are most likely to be patients with BoPD to be consistent with our clinical expert's rating. Accuracy is 0.82 and sensitivity and specificity are 0.54 and 0.92, respectively. 
 
 Details of the data and algorithm development can be found in [Publication & Conference](#6-publication--conference).
 
 In addition, we have integrated the algorithm into a screening tool in both portable version ([section 3.1](#31-Portable-version)) and headless version ([section 3.2](#32-Headless-version)) for implementation. The portable version has graphical user interface, and it can be executed in WinPython (a portable distribution of Python programming language for Windows without the need to install Python) or Python 3.8. The headless version includes executable Python source code without a graphical user interface and it requires Python 3.8. Prior to using either version of the tool, patient EHR data needs to be preprocessed in specific format as the input dataset for the screening tool (details see [section 2](#2-Preparing-input-dataset-for-the-screening-tool)). 
 
 
-## 2. Preparation of input dataset for the screening tool
+## 2. Preparation of input dataset for the screening algorithm
 The key steps are demonstrated in the flowchart below.![Flow chart ](/images/flowchart.png)
 More details are provided with sample SQL codes in the data preparation manual [Prepare_input_data.md](https://github.com/BoPDdiseasescreening/Borderline-Personality-Disorder-BoPD-automatic-disease-screening-tool/blob/main/Prepare_input_data.md). The SQL codes are for demonstration purpose and please adjust them based on your database.
 
 
 
-## 3. Execution of the screening tool
+## 3. Execution of the screening algorithm
 ### 3.1 Portable version 
 
 The tool in portable version is embeded in a TKinter GUI as an interactive interface for functionality. If installation of python 3.8 is challenging, we suggest to consider WinPython for implementation. 
