@@ -63,10 +63,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 3.	Gunderson, J.G., et al., Borderline personality disorder. Nat Rev Dis Primers, 2018. 4: p. 18029.
 4.	Sansone, R.A. and L.A. Sansone, BORDERLINE PERSONALITY DISORDER IN THE MEDICAL SETTING: Suggestive Behaviors, Syndromes, and Diagnoses. Innov Clin Neurosci, 2015. 12(7-8): p. 39-44.
 5.	Ruggero, C.J., et al., Borderline personality disorder and the misdiagnosis of bipolar disorder. J Psychiatr Res, 2010. 44(6): p. 405-8.
-6.	Zanarini, M.C., et al., Axis II comorbidity of borderline personality disorder. Compr Psychiatry, 1998. 39(5): p. 296-302.
-7.	Zanarini, M.C., et al., Axis I comorbidity of borderline personality disorder. Am J Psychiatry, 1998. 155(12): p. 1733-9.
-8.	National Institute of Mental Health. Borderline Personality Disorder. 2017 October 2020]; Available from: https://www.nimh.nih.gov/health/topics/borderline-personality-disorder/index.shtml.
-9.	
+
 
 ## 6. Publication & Conference
 
